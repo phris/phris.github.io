@@ -1,12 +1,12 @@
 ---
   name: "Phris"
-  position: "Earth"
-  company: "Freelancer"
+  # position: "Earth"
+  # company: "Freelancer"
   location: "China"
   email: "phriswang@gmail.com"
   gravatar: "https://s.gravatar.com/avatar/31a140d89cd85aaa5228d38c35d76158?size=300&default=retro"
-  bio: |
-    Your Short Bio goes here.
+  # bio: |
+  #   Your Short Bio goes here.
   #activate the social buttons you like by removing the comment
   social:
     # google:
