@@ -2,7 +2,7 @@
 title: Phris
 email: phriswang@gmail.com
 description: "The Pursuit of Happyness"
-logo_location: "https://s.gravatar.com/avatar/31a140d89cd85aaa5228d38c35d76158?size=100&default=retro"
+# logo_location: "https://s.gravatar.com/avatar/31a140d89cd85aaa5228d38c35d76158?size=100&default=retro"
 
 #baseurl: "" # the subpath of your site, e.g. /blog/
 #url: "" # the base hostname & protocol for your site
