@@ -1,0 +1,47 @@
+---
+  name: "Phris"
+  position: "Earth"
+  company: "Freelancer"
+  location: "China"
+  email: "phriswang@gmail.com"
+  gravatar: "https://s.gravatar.com/avatar/31a140d89cd85aaa5228d38c35d76158?size=300&default=retro"
+  bio: |
+    Your Short Bio goes here.
+  #activate the social buttons you like by removing the comment
+  social:
+    google:
+      url: "http://plus.google.com/+You/"
+      text: "+You"
+      btnClass: "btn-google"
+      logo: "fa-google"
+    # facebook:
+    #  url: "http://facebook.com/yourid"
+    #  text: "/yourid"
+    #  btnClass: "btn-facebook"
+    #  logo: "fa-facebook"
+    twitter:
+      url: "http://twitter.com/yourid"
+      text: "/yourid"
+      btnClass: "btn-twitter"
+      logo: "fa-twitter"
+    # linkedin:
+    #   url: "https://www.linkedin.com/in/yourid"
+    #   text: "/yourid"
+    #   btnClass: "btn-linkedin"
+    #   logo: "fa-linkedin"
+    github:
+      url: "http://github.com/phris"
+      text: "/phris"
+      btnClass: "btn-github"
+      logo: "fa-github"
+    stackoverflow:
+      url: "http://stackoverflow.com/users/youruserid/yourid"
+      text: "/yourid"
+      btnClass: "btn-stackoverflow"
+      logo: "fa-stack-overflow"
+    # soundcloud:
+    #   url: "http://soundcloud.com/yourid"
+    #   text: "/yourid"
+    #   btnClass: "btn-soundcloud"
+    #   logo: "fa-soundcloud"
+       
