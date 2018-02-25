@@ -20,8 +20,8 @@
     #  btnClass: "btn-facebook"
     #  logo: "fa-facebook"
     twitter:
-      url: "http://twitter.com/yourid"
-      text: "/yourid"
+      url: "http://twitter.com/phriswang"
+      text: "phriswang"
       btnClass: "btn-twitter"
       logo: "fa-twitter"
     # linkedin:
@@ -31,7 +31,7 @@
     #   logo: "fa-linkedin"
     github:
       url: "http://github.com/phris"
-      text: "/phris"
+      text: "phris"
       btnClass: "btn-github"
       logo: "fa-github"
     # stackoverflow:
