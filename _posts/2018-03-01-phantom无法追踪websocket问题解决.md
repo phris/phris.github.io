@@ -1,7 +1,3 @@
-# phantom无法追踪websocket问题解决
-
-## 解决办法
-
 ### 1.禁用websocket, 使使用websocket的请求转为使用xhr
 ```javascript
 page.on('onInitialized', function () {
