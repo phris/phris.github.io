@@ -15,7 +15,7 @@ date: 2014-10-19 23:51
           <h3><a href="{{post.url | prepend: site.baseurl}}">{{post.title}}</a></h3>
   		<div>
   		  <small>
-  			<i class="fab fa-calendar"></i>
+  			<i class="fa fa-calendar"></i>
   			<time>
           {{ post.date | date:'%A, %B %d, %Y'}}
   			</time>
@@ -23,7 +23,7 @@ date: 2014-10-19 23:51
            </div>
   		    <div class="margin10">
             <small>
-              <i class="fab fa-tag"></i>
+              <i class="fa fa-tag"></i>
               {% for tag in post.tags %}
                 <span class="label label-tag">{{tag}}</span>
               {% endfor %}
