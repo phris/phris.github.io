@@ -123,7 +123,9 @@ background-color:#0e76a8;
 .btn-soundcloud{
   background-color: #FF7202;
 }
-
+.btn-npm{
+  background-color: #C12127;
+}
 
 /* utility classes */
 .no-margin:{

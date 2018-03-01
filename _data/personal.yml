@@ -34,6 +34,11 @@
       text: "phris"
       btnClass: "btn-github"
       logo: "fa-github"
+    npm:
+      url: "https://www.npmjs.com/~phris"
+      text: "phris"
+      btnClass: "btn-npm"
+      logo: "fa-npm"
     # stackoverflow:
     #   url: "http://stackoverflow.com/users/youruserid/yourid"
     #   text: "/yourid"
