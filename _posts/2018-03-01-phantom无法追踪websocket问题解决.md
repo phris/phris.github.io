@@ -12,6 +12,7 @@ page.on('onInitialized', function () {
   })
 })
 ```
+<!--more-->
 
 ### 2.修改原WebSocket类，添加phantom的回调
 ```javascript
