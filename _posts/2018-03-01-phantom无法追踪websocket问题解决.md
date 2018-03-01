@@ -1,3 +1,11 @@
+---
+layout: post
+tags: phantom websocket
+date: 2018-03-01 10:00
+title: phantom无法追踪websocket问题解决
+published: true
+---
+
 ### 1.禁用websocket, 使使用websocket的请求转为使用xhr
 ```javascript
 page.on('onInitialized', function () {
