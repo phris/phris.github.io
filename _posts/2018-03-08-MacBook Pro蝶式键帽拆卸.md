@@ -8,7 +8,8 @@ published: true
 
 ### 蝶式键帽图  
 左侧是垂直下压扣，右侧是水平内叉扣  
-<img src="../assets/image/dieshijianmao.jpg" height="300px">  
+<img src="/assets/image/dieshijianmao.jpg" height="300px">  
+<!--more-->
 #### 拆卸
 可以使用订书针，从左侧撬起，左侧上下两个全部撬起后，向左拽，即可拆卸掉。
 #### 安装
