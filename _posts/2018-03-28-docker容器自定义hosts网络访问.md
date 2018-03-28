@@ -39,7 +39,7 @@ vim /etc/docker/daemon.json
 
 ```json
 {
-    "dns": ["192.168.1.100"]
+    "dns": ["192.168.1.100", "8.8.8.8"]
 }
 ```
 
@@ -52,6 +52,7 @@ service docker restart
 ```
 echo 'dns=none' >> /etc/NetworkManager/NetworkManager.conf
 echo 'nameserver 192.168.1.100' > /etc/resolve.conf
+echo 'nameserver 8.8.8.8' >> /etc/resolve.conf
 systemctl restart NetworkManager.service
 ```
 
