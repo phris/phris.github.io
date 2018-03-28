@@ -1,6 +1,6 @@
 ---
 layout: post
-tags: docker hosts
+tags: docker hosts dns
 date: 2018-03-28 17:00
 title: docker容器自定义hosts网络访问
 published: true
@@ -46,6 +46,13 @@ vim /etc/docker/daemon.json
 ```shell
 # 重启
 service docker restart
+```
+
+### centos永久设置dns
+```
+echo 'dns=none' >> /etc/NetworkManager/NetworkManager.conf
+echo 'nameserver 192.168.1.100' > /etc/resolve.conf
+systemctl restart NetworkManager.service
 ```
 
 #### 参考链接
