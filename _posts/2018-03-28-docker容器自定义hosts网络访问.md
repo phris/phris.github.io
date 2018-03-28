@@ -16,6 +16,8 @@ touch /etc/dnsmasq.hosts
 service dnsmasq restart
 ```
 
+<!--more-->
+
 ### 使用 Docker 的 DNS 解决
 ```shell
 vim /etc/docker/daemon.json
