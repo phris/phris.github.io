@@ -57,6 +57,6 @@ systemctl restart NetworkManager.service
 ```
 
 #### 参考链接
-* [docker & dnsmasq](http://knktc.com/2014/08/16/docker-use-dnsmasq-as-hosts)
-* [dnsmasq](https://wiki.archlinux.org/index.php/Dnsmasq_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87))
+* [Docker使用dnsmasq替代/etc/hosts解析](http://knktc.com/2014/08/16/docker-use-dnsmasq-as-hosts)
+* [archlinux:dnsmasq (简体中文)](https://wiki.archlinux.org/index.php/Dnsmasq_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87))
 * [firewall-cmd](http://wangchujiang.com/linux-command/c/firewall-cmd.html)
