@@ -8,12 +8,26 @@ published: true
 
 ### 搭建 dnsmaq DNS 服务
 ```shell
+# 安装dnsmasq
 yum install dnsmasq -y
 
+# 监听对127.0.0.1, 192.168.1.100的请求，192.168.1.100为局域网地址，可继续添加多个
+echo 'listen-address=127.0.0.1, 192.168.1.100' >> /etc/dnsmasq.conf
+echo 'addn-hosts=/etc/dnsmasq.hosts' >> /etc/dnsmasq.conf
+
+# 添加解析
 touch /etc/dnsmasq.hosts
+echo '192.168.1.1 www.server.com' >> /etc/dnsmasq.hosts
 
 # 重启
 service dnsmasq restart
+
+# 自动启动
+systemctl enable dnsmasq
+
+# 开放dns服务端口
+firewall-cmd --zone=public --add-port=53/udp --permanent
+firewall-cmd --reload
 ```
 
 <!--more-->
@@ -25,7 +39,7 @@ vim /etc/docker/daemon.json
 
 ```json
 {
-    "dns": ["10.123.12.14", "8.8.8.8"]
+    "dns": ["192.168.1.100"]
 }
 ```
 
@@ -33,3 +47,8 @@ vim /etc/docker/daemon.json
 # 重启
 service docker restart
 ```
+
+#### 参考链接
+* http://knktc.com/2014/08/16/docker-use-dnsmasq-as-hosts/
+* https://wiki.archlinux.org/index.php/Dnsmasq_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)
+* http://wangchujiang.com/linux-command/c/firewall-cmd.html
