@@ -6,7 +6,7 @@ title: 部署kubernetes集群
 published: true
 ---
 
-#### 安装docker
+#### 安装docker(所有节点)
 ```zsh
 yum update -y;
 yum install -y yum-utils device-mapper-persistent-data lvm2;
@@ -16,7 +16,7 @@ systemctl enable docker;
 systemctl start docker;
 ```
 
-#### 系统调整
+#### 系统调整(所有节点)
 ```zsh
 # 关闭SWAP分区
 swapoff -a;
@@ -68,7 +68,7 @@ ntpdate cn.pool.ntp.org
 systemctl stop postfix && systemctl disable postfix;
 ```
 
-#### 安装kubeadm, kubelet, kubectl
+#### 安装kubeadm, kubelet, kubectl(所有节点)
 ```zsh
 cat <<EOF > /etc/yum.repos.d/kubernetes.repo
 [kubernetes]
@@ -90,7 +90,7 @@ yum install -y kubelet kubeadm kubectl --disableexcludes=kubernetes;
 systemctl enable --now kubelet;
 ```
 
-#### 提前下载镜像
+#### 提前下载镜像(master节点)
 ```zsh
 docker pull registry.cn-hangzhou.aliyuncs.com/google_containers/kube-apiserver:v1.14.1
 docker pull registry.cn-hangzhou.aliyuncs.com/google_containers/kube-controller-manager:v1.14.1
@@ -117,17 +117,17 @@ docker rmi registry.cn-hangzhou.aliyuncs.com/google_containers/etcd:3.3.10
 docker rmi registry.cn-hangzhou.aliyuncs.com/google_containers/coredns:1.3.1
 ```
 
-#### 启动kubernetes
+#### 启动kubernetes(master节点)
 ```zsh
 kubeadm init
 ```
 
-#### 安装weave
+#### 安装weave(master节点)
 ```zsh
 kubectl apply -f "https://cloud.weave.works/k8s/net?k8s-version=$(kubectl version | base64 | tr -d '\n')"
 ```
 
-#### 解决coredns NOT READY问题
+#### 解决coredns NOT READY问题(master节点)
 ```zsh
 kubectl -n kube-system get deployment coredns -o yaml | \
   sed 's/allowPrivilegeEscalation: false/allowPrivilegeEscalation: true/g' | \
