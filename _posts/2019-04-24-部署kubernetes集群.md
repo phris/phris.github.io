@@ -16,6 +16,8 @@ systemctl enable docker;
 systemctl start docker;
 ```
 
+<!--more-->
+
 #### 系统调整(所有节点)
 ```zsh
 # 关闭SWAP分区
